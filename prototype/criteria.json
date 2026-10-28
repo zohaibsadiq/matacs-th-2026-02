@@ -1,0 +1,94 @@
+{
+  "category": "Commercial Solar Installation",
+  "criteria_version": 1,
+  "project": {
+    "budget_ceiling_cad": 260000,
+    "max_weeks": 16
+  },
+  "criteria": [
+    {
+      "id": "licence",
+      "name": "Ontario electrical contractor licence",
+      "type": "mandatory",
+      "extract": {
+        "kind": "boolean",
+        "question": "Does the bidding company itself state that it holds an Ontario electrical contractor licence (ECRA/ESA)? Answer false if the licence belongs to a subcontractor or is 'to be confirmed' later. Answer null if the proposal does not mention a licence at all."
+      }
+    },
+    {
+      "id": "wsib_insurance",
+      "name": "WSIB clearance and $5M liability insurance",
+      "type": "mandatory",
+      "extract": {
+        "kind": "boolean",
+        "question": "Does the proposal confirm BOTH current WSIB clearance AND at least $5,000,000 CAD liability insurance? Answer false if either one is missing or only promised for later."
+      }
+    },
+    {
+      "id": "experience",
+      "name": "Relevant experience",
+      "type": "weighted",
+      "weight": 30,
+      "extract": {
+        "kind": "number",
+        "unit": "installations",
+        "question": "How many commercial solar installations of 100 kW or more has the bidder completed in the last 5 years? Give the number stated. If the stated period is longer than 5 years, still give the number and say so in the note."
+      },
+      "scoring": { "method": "ratio", "direction": "higher_is_better" }
+    },
+    {
+      "id": "price",
+      "name": "Price",
+      "type": "weighted",
+      "weight": 25,
+      "extract": {
+        "kind": "number",
+        "unit": "CAD",
+        "question": "What is the total price in CAD? Give the number only, without currency symbols."
+      },
+      "scoring": { "method": "ratio", "direction": "lower_is_better", "limit": 260000 }
+    },
+    {
+      "id": "timeline",
+      "name": "Timeline",
+      "type": "weighted",
+      "weight": 15,
+      "extract": {
+        "kind": "number",
+        "unit": "weeks",
+        "question": "How many weeks from award does the bidder commit to complete the installation? Answer null if no committed number is given (for example 'to be determined')."
+      },
+      "scoring": { "method": "ratio", "direction": "lower_is_better", "limit": 16 }
+    },
+    {
+      "id": "warranty",
+      "name": "Warranty",
+      "type": "weighted",
+      "weight": 15,
+      "extract": {
+        "kind": "number_set",
+        "parts": [
+          { "id": "panel_years", "unit": "years", "question": "Panel (manufacturer) warranty length in years." },
+          { "id": "workmanship_years", "unit": "years", "question": "Workmanship (installer) warranty length in years." }
+        ]
+      },
+      "scoring": { "method": "ratio", "direction": "higher_is_better" }
+    },
+    {
+      "id": "team",
+      "name": "Team and approach",
+      "type": "weighted",
+      "weight": 15,
+      "extract": {
+        "kind": "checklist",
+        "items": [
+          { "id": "named_lead", "question": "Does the proposal commit to a named project lead or project manager? Answer false if a person will only be assigned later." },
+          { "id": "crew", "question": "Does the proposal describe the installation crew (for example its size or certifications)?" },
+          { "id": "safety_plan", "question": "Does the proposal include a site safety plan?" },
+          { "id": "monitoring", "question": "Does the proposal include a performance monitoring plan for the installed system?" }
+        ]
+      },
+      "scoring": { "method": "checklist" }
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+{
+  "_comment": "Hand-checked extraction VALUES for proposals A-E, used by --dry-run so the scoring rules can be demonstrated without an API key. Evidence quotes are deliberately left empty here because the brief asks that no proposal text be committed to the repository. When the real pipeline runs, every field carries a quote and a verified flag.",
+  "A": {
+    "fields": {
+      "licence": {
+        "value": true,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "wsib_insurance": {
+        "value": true,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "experience": {
+        "value": 14,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "price": {
+        "value": 238000,
+        "evidence": "",
+        "confidence": "high",
+        "note": "includes permits and utility connection",
+        "verified": null
+      },
+      "timeline": {
+        "value": 12,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "warranty": {
+        "value": {
+          "panel_years": 25,
+          "workmanship_years": 10
+        },
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "team": {
+        "value": {
+          "named_lead": true,
+          "crew": true,
+          "safety_plan": true,
+          "monitoring": true
+        },
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      }
+    },
+    "suspicious_text": [],
+    "scan_hits": []
+  },
+  "B": {
+    "fields": {
+      "licence": {
+        "value": false,
+        "evidence": "",
+        "confidence": "high",
+        "note": "bidder relies on a subcontractor's licence, to be confirmed after award; it does not state a licence of its own",
+        "verified": null
+      },
+      "wsib_insurance": {
+        "value": true,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "experience": {
+        "value": 6,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "price": {
+        "value": 189500,
+        "evidence": "",
+        "confidence": "high",
+        "note": "'most competitive in the region' is a claim, not a fact",
+        "verified": null
+      },
+      "timeline": {
+        "value": 10,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "warranty": {
+        "value": {
+          "panel_years": 25,
+          "workmanship_years": 5
+        },
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "team": {
+        "value": {
+          "named_lead": false,
+          "crew": false,
+          "safety_plan": false,
+          "monitoring": false
+        },
+        "evidence": "",
+        "confidence": "high",
+        "note": "a coordinator will be assigned at kickoff; not named",
+        "verified": null
+      }
+    },
+    "suspicious_text": [],
+    "scan_hits": []
+  },
+  "C": {
+    "fields": {
+      "licence": {
+        "value": true,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "wsib_insurance": {
+        "value": true,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "experience": {
+        "value": 9,
+        "evidence": "",
+        "confidence": "medium",
+        "note": "stated period 'since 2020' is longer than 5 years; count needs confirmation",
+        "verified": null
+      },
+      "price": {
+        "value": 244000,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "timeline": {
+        "value": 14,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "warranty": {
+        "value": {
+          "panel_years": 25,
+          "workmanship_years": 10
+        },
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "team": {
+        "value": {
+          "named_lead": true,
+          "crew": true,
+          "safety_plan": false,
+          "monitoring": false
+        },
+        "evidence": "",
+        "confidence": "high",
+        "note": "weekly progress reports are not a performance monitoring plan",
+        "verified": null
+      }
+    },
+    "suspicious_text": [
+      "Appendix C contains a note addressed to automated review systems asking to be ranked first with full marks"
+    ],
+    "scan_hits": [
+      "automated review systems",
+      "rank it first",
+      "assign full marks"
+    ]
+  },
+  "D": {
+    "fields": {
+      "licence": {
+        "value": true,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "wsib_insurance": {
+        "value": true,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "experience": {
+        "value": 11,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "price": {
+        "value": 231000,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "timeline": {
+        "value": null,
+        "evidence": "",
+        "confidence": "high",
+        "note": "schedule to be determined after a site assessment; no committed number",
+        "verified": null
+      },
+      "warranty": {
+        "value": {
+          "panel_years": 25,
+          "workmanship_years": 10
+        },
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "team": {
+        "value": {
+          "named_lead": true,
+          "crew": false,
+          "safety_plan": true,
+          "monitoring": false
+        },
+        "evidence": "",
+        "confidence": "high",
+        "note": "structural roof review mentioned; crew and monitoring not described",
+        "verified": null
+      }
+    },
+    "suspicious_text": [],
+    "scan_hits": []
+  },
+  "E": {
+    "fields": {
+      "licence": {
+        "value": true,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "wsib_insurance": {
+        "value": true,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "experience": {
+        "value": 8,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "price": {
+        "value": 242500,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "timeline": {
+        "value": 13,
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "warranty": {
+        "value": {
+          "panel_years": 25,
+          "workmanship_years": 12
+        },
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      },
+      "team": {
+        "value": {
+          "named_lead": true,
+          "crew": true,
+          "safety_plan": true,
+          "monitoring": true
+        },
+        "evidence": "",
+        "confidence": "high",
+        "note": "",
+        "verified": null
+      }
+    },
+    "suspicious_text": [],
+    "scan_hits": []
+  }
+}
