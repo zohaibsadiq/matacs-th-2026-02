@@ -1,0 +1,19 @@
+# Secrets - never commit API keys
+.env
+
+# Local copies of the sample proposal text must NOT be committed (brief rule).
+# Refer to proposals by letter A-E only.
+prototype/samples/*.txt
+
+# Local cache of AI extraction results and run outputs
+prototype/.cache/
+prototype/output/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# The brief itself must never be committed or redistributed
+MATACS-TH-2026-02_Candidate_Brief*.pdf
+/*.pdf
